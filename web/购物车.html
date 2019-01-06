@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>购物车</title>
+	<link rel="stylesheet" href="public.css">
+	<link rel="stylesheet" href="last.css">
+	<!-- <link rel="stylesheet" href="index.css"> -->
+	<style>	
+		
+	</style>
+</head>
+<body>
+	<div class="headb">
+		<div class="head_0">
+			<li class="head_0_li0">帮5买，享帮帮</li>
+			<div class="head_img0"></div>
+			<div class="head_img1"></div>
+			<div class="head_img2"></div>
+			<li>登录</li>
+			<li>注册</li>
+			<div class="head_img3"></div>
+			<li>消息</li>
+			<div class="head_img4"></div>
+			<li>我的订单</li>
+			<li>我的收藏</li>
+			<li>帮钻兑换</li>
+			<div class="head_img5"><img src="img/phone.png" height="14" width="9" alt=""></div>
+			<li>手机版</li>
+			<li>帮5淘</li>
+			<li>客户服务</li>
+			<div class="head_img6"><img src="img/gouwuche.jpg" height="16" width="18" alt=""></div>
+			<li>购物车</li>
+			<li class="head_0_last">0</li>
+		</div>
+		<div class="head_1">
+			<img src="img/logo_03.jpg" height="62" width="141" alt="">
+			<input class="souSuo" type="text" value="输入商品网址或关键词，直通全网，快速帮5购"><input class="tiJiao" type="submit" value="搜全网">
+			<div class="lianFang"></div>
+			<div class="lianFang"></div>
+			<div class="changJianWenTi"></div>
+			<div class="hotSou">
+				<li class="hotSou_first" >洗发护发</li>
+				<li>日本纸尿裤</li>
+				<li>身体乳</li>
+				<li>内衣文胸</li>
+				<li>iPhone 6s</li>
+				<li>iPad Air2</li>
+				<li>牛仔裤</li>
+				<li>奶粉</li>
+				<li>防晒霜</li>
+				<li>伞</li>
+			</div>
+		</div>
+	</div>
+	
+		
+
+	<div class="head_3_parent">
+		<div class="head_3">
+			<li class="head_3_first">首页</li>
+			<li>热门品牌</li>
+			<li>美妆个护</li>
+			<li>服饰鞋包</li>
+			<li>母婴生活</li>
+			<li>食品保健</li>
+			<li>韩国直邮</li>
+			<li>跨境购</li>
+			<img src="" alt="">
+			<img src="" alt="">
+			<img src="" alt="">
+			<img src="" alt="">
+		</div>
+	</div>
+	<div class="bOthers">
+		<p>首页>美容护肤/美体/精油>防晒>韩国RE:CIPE 水晶清爽防水防晒喷雾SPF50 150ml/瓶</p>
+		<div class="bContent">
+			<div class="bLeft">
+				 <div class="bLeft1">
+					<div id="box" class="zhanShi">
+						<div id="img1">
+							<img src="img/pp0.jpeg" width="408" height="408"/>
+							<div id="slider"></div>
+						</div>
+					</div>
+					<div class="small">	
+						<img id="buttonL" src="img/spanl.jpg" height="62" width="24" alt="">
+						<img id="sp0" src="img/sp0.jpeg" height="55" width="55" alt="">
+						<img id="sp1" src="img/sp1.jpeg" height="55" width="55" alt="">
+						<img id="buttonR" src="img/spanr.jpg" height="62" width="25" alt="">
+					</div> 
+				</div>
+				<div class="datu">
+					<div id="img2" class="bLeft3">
+						<img src="img/pp0.jpeg" height="270%" width="270%" alt="" id="Bimg" >
+					</div>
+				</div>
+				<script>
+					var img1 = document.getElementById("img1");
+					var img2 = document.getElementById("img2");
+					var slider = document.getElementById("slider");
+					var Bimg = document.getElementById("Bimg");
+					var box = document.getElementById('box'); 
+					img1.onmouseover=function(){
+					    slider.style.display='block';
+						img2.style.display='block';
+				 	}
+					img1.onmouseout=function(){
+					    slider.style.display='none';
+						img2.style.display='none';
+				 	}
+				  
+				    img1.onmousemove=function(ev){
+						var ev=ev||event;
+						  
+						var oL=ev.clientX-box.offsetLeft-slider.offsetWidth/2;
+						var oT=ev.clientY-box.offsetTop-slider.offsetHeight/2;
+						  
+						var oMaxw=img1.offsetWidth-slider.offsetWidth;
+						var oMaxh=img1.offsetHeight-slider.offsetHeight;
+						  
+						oL=oL>oMaxw?oMaxw:oL<0?0:oL;
+						oT=oT>oMaxh?oMaxh:oT<0?0:oT;
+						
+						slider.style.left = oL+'px';
+						slider.style.top = oT+'px' ;
+						
+						var oBmaxw = img2.offsetWidth - Bimg.offsetWidth; 
+						var oBmaxh = img2.offsetHeight - Bimg.offsetHeight; 
+						Bimg.style.left = ( oL/oMaxw ) * oBmaxw + 'px'
+						Bimg.style.top = ( oT/oMaxh ) * oBmaxh + 'px'
+					}
+					  
+
+				</script>
+				<div class="bLeft2">
+					<h1>韩国 RE:CIPE 水晶清爽防水防晒喷雾SPF50 150ml/瓶</h1>
+					<p class="bLeft2_jieshao">【限购3件】超透明无痕防晒，防水防汗定妆，保湿降温不粘腻。水晶防晒喷雾，喷后皮肤水润，不油，不留白，更不会像防晒霜那样抹不开，非常实用，开始存货吧。</p>
+					<p><span class="sp0">价格</span><span style="color:red;">¥71</span><span style="text-decoration:line-through;">¥150</span></p>
+						<img src="img/ss_09.jpg" height="101" width="500" alt="">
+					
+					<div class="bLeft_jinghanliang">
+						<span class="sp1">化妆品净含量</span><div>150ml</div><div>200ml</div>
+					</div>
+					<div><span class="sp2">数量</span><span class="sp0">件（库存</span><span></span><span class="sp0">件）</span></div>
+					<div><span class="sp2">销量</span><span style="color:#ff0259;"></span><span class="sp0">件</span></div>
+					<div><span class="sp2">您已选择</span><span style="color:#ff9003;">"150ml"</span></div>
+					<div class="bLeft_lijigoumai">立即购买</div>
+					<div class="bLeft_jiagou">加入购物车</div>
+				</div>
+				
+			</div>
+			
+			<div class="bRight">
+				<img src="img/ww_07.jpg" height="620" width="180" alt="">
+			</div>
+			<div class="bLast">
+				<img src="img/a_07.jpg" height="104" width="1181" alt="">
+			</div>
+		</div>
+		
+	</div>
+	<div class="abottom">
+		 <div class="fastLink"><img src="img/xxmm.png" height="344" width="1180" alt=""></div>
+	</div>
+	<!-- <div class="abottom">
+		<div class="fastLink"></div>
+		<div class="littleNav"></div>
+		<div class="ourInformation"></div>
+		<div class="ourFriends"></div>
+	</div> -->
+	
+</body>
+</html>

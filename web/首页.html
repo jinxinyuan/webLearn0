@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>首页</title>
+	<link rel="stylesheet" href="first.css">
+	<link rel="stylesheet" href="public.css">
+	<script>
+		window.onload = function(){
+			var cover = document.getElementsByClassName("head")[0];
+			window.onscroll = function(){
+				var st = document.documentElement.scrollTop || document.body.scrollTop;
+				if(st>180){
+					cover.style.position="fixed";
+				}else{
+					cover.style.position="static";
+				}
+			}
+		}
+
+	</script>
+	
+</head>
+<body>
+	<div class="head">
+		<div class="head_0">
+			<li class="head_0_li0">帮5买，享帮帮</li>
+			<div class="head_img0"></div>
+			<div class="head_img1"></div>
+			<div class="head_img2"></div>
+			<li>登录</li>
+			<li>注册</li>
+			<div class="head_img3"></div>
+			<li>消息</li>
+			<div class="head_img4"></div>
+			<li>我的订单</li>
+			<li>我的收藏</li>
+			<li>帮钻兑换</li>
+			<div class="head_img5"><img src="img/phone.png" height="14" width="9" alt=""></div>
+			<li>手机版</li>
+			<li>帮5淘</li>
+			<li>客户服务</li>
+			<div class="head_img6"><img src="img/gouwuche.jpg" height="16" width="18" alt=""></div>
+			<li>购物车</li>
+			<li class="head_0_last">0</li>
+		</div>
+		<div class="head_1">
+			<img src="img/logo_03.jpg" height="62" width="141" alt="">
+			<input class="souSuo" type="text" value="输入商品网址或关键词，直通全网，快速帮5购"><input class="tiJiao" type="submit" value="搜全网">
+			<div class="lianFang"></div>
+			<div class="lianFang"></div>
+			<div class="changJianWenTi"></div>
+			<div class="hotSou">
+				<li class="hotSou_first" >洗发护发</li>
+				<li>日本纸尿裤</li>
+				<li>身体乳</li>
+				<li>内衣文胸</li>
+				<li>iPhone 6s</li>
+				<li>iPad Air2</li>
+				<li>牛仔裤</li>
+				<li>奶粉</li>
+				<li>防晒霜</li>
+				<li>伞</li>
+			</div>
+		</div>
+		<div class="head_2">
+			<li class="head_2_first">全部商品分类</li>
+			<li>帮5赚</li>
+			<li>帮韩品</li>
+			<li>超划算</li>
+			<li>品牌货栈</li>
+			<li>韩国馆</li>
+			<li>帮社区</li>
+			<li class="head_2_last">1元兑奖</li>
+		</div>
+	</div>
+	<div class="others">
+		<div class="content">
+			<div class="aLeft">
+				<div class="zuohei">当前搜索电商全网</div>
+				<div class="zuozi">
+					<ul>
+						<li>手机</li>
+						<li>数码</li>
+						<li>影音</li>
+						<li>配件</li>
+					</ul>
+					<ul>
+						<li>电脑</li>
+						<li>网络</li>
+						<li>办公</li>
+						<li>打印</li>
+					</ul>
+					<ul>
+						<li>家电</li>
+						<li>厨卫</li>
+						<li>生活</li>
+						<li>个户</li>
+					</ul>
+					<ul>
+						<li>园艺</li>
+						<li>家具</li>
+						<li>家纺</li>
+						<li>家饰</li>
+					</ul>
+					<ul>
+						<li>彩妆</li>
+						<li>面部</li>
+						<li>身体</li>
+						<li>香水</li>
+					</ul>
+					<ul>
+						<li>男装</li>
+						<li>女装</li>
+						<li>内衣</li>
+						<li>其他</li>
+					</ul>
+					<ul>
+						<li>女包</li>
+						<li>男包</li>
+						<li>女鞋</li>
+						<li>男鞋</li>
+					</ul>
+					<ul>
+						<li>运动</li>
+						<li>户外</li>
+						<li>装备</li>
+						<li>服饰</li>
+					</ul>
+					<ul>
+						<li>儿童</li>
+						<li>婴儿</li>
+						<li>食品</li>
+						<li>玩具</li>
+					</ul>
+					<ul>
+						<li>乐器</li>
+						<li>家宠</li>
+						<li>收藏</li>
+						<li>鲜花</li>
+					</ul>
+					<ul>
+						<li>保健</li>
+						<li>药品</li>
+						<li>理疗</li>
+						<li>眼镜</li>
+					</ul>
+					<ul>
+						<li>果蔬</li>
+						<li>礼品</li>
+						<li>粮油</li>
+						<li>特产</li>
+					</ul>
+					<ul>
+						<li>文艺</li>
+						<li>生活</li>
+						<li>科技</li>
+						<li>体育</li>
+					</ul>
+				</div>
+				<div class="zuoxia">
+					<img src="img/dd_03.jpg" height="22" width="22" alt="">
+					<div>什么是帮5购</div>
+					<img src="img/dd_06.jpg" height="22" width="22" alt="">
+					<div>帮5购提供什么服务</div>
+					<img src="img/dd_08.jpg" height="22" width="22" alt="">
+					<div>如何开通帮5购服务</div>
+				</div>
+			</div>
+			<div class="aMiddle">
+				<div class="box" id="box">
+					<div class="slider" id="slider">
+						<div class="slide"><img src="img/bann6.png" height="361" width="800" alt=""></div>
+						<div class="slide"><img src="img/bann1.jpeg" height="361" width="800" alt=""></div>
+						<div class="slide"><img src="img/bann2.jpeg" height="361" width="800" alt=""></div>
+						<div class="slide"><img src="img/bann3.jpeg" height="361" width="800" alt=""></div>
+						<div class="slide"><img src="img/bann4.jpeg" height="361" width="800" alt=""></div>
+						<div class="slide"><img src="img/bann5.jpeg" height="361" width="800" alt=""></div>
+						<div class="slide"><img src="img/bann6.png" height="361" width="800" alt=""></div>
+						<div class="slide"><img src="img/bann1.jpeg" height="361" width="800" alt=""></div>
+					</div>
+					<span id="left"><</span>
+					<span id="right">></span>
+					<ul class="nav" id="nav">
+						<li class="active">1</li>
+						<li>2</li>
+						<li>3</li>
+						<li>4</li>
+						<li>5</li>
+						<li>6</li>
+					</ul>
+				</div>
+				<div class="middleDown">
+					<img src="img/1(1).jpg" height="183" width="200" alt="">
+					<img src="img/2.jpg" height="183" width="200" alt="">
+					<img src="img/3(1).png" height="183" width="200" alt="">
+					<a href="购物车.html"><img src="img/qqq.png" height="183" width="200" alt="" ></a>
+				</div>
+			</div>
+			<div class="aRight">
+				<div class="bangbang">
+					<img src="img/ico-notice.png" height="15" width="16" alt="">
+					<p>帮帮快讯</p>
+					<img src="img/jiantou.jpg" height="9" width="11" alt="">
+				</div>
+				<div class="case">
+			        <div class="part2" id="part2">
+			            <div id="scroll1">
+			                <ul>
+			                    <li>[公告]帮购及vip服务调整1</li>
+			                    <li>[公告]帮购及vip服务调整2</li>
+			                    <li>[公告]帮购及vip服务调整3</li>
+			                    <li>[公告]帮购及vip服务调整4</li>
+			                    <li>[公告]帮购及vip服务调整5</li>
+			                    <li>[公告]帮购及vip服务调整6</li>
+			                    <li>[公告]帮购及vip服务调整7</li>
+			                    <li>[公告]帮购及vip服务调整8</li>
+			                    <li>[公告]帮购及vip服务调整9</li>
+			                    <li>[公告]帮购及vip服务调整10</li>
+			                    <li>[公告]帮购及vip服务调整11</li>
+			                    <li>[公告]帮购及vip服务调整12</li>
+			                    <li>[公告]帮购及vip服务调整13</li>
+			                </ul>
+			            </div>
+		            	<div id="scroll2"></div>
+		            </div>
+		        </div>
+		    </div>
+        </div>
+    </div>
+	<div class="abottom">
+		 <div class="fastLink"><img src="img/xxmm.png" height="344" width="1180" alt=""></div>
+	</div>
+	<!-- <div class="abottom">
+		<div class="fastLink"></div>
+		<div class="littleNav"></div>
+		<div class="ourInformation"></div>
+		<div class="ourFriends"></div>
+	</div> -->
+	
+	<script>
+		var box = document.getElementById('box');
+		var oNavlist = document.getElementById('nav').children;
+		var slider = document.getElementById('slider');
+		var left = document.getElementById('left');
+		var right = document.getElementById('right');
+		var index = 1;
+		var timer;
+		var isMoving = false;
+		box.onmouseover = function(){
+			animate(left,{opacity:50})
+			animate(right,{opacity:50})
+			clearInterval(timer)
+		}
+		box.onmouseout = function(){
+			animate(left,{opacity:0})
+			animate(right,{opacity:0})
+			timer = setInterval(next, 3000);
+		}
+		right.onclick = next;
+		left.onclick = prev;
+		for( var i=0; i<oNavlist.length; i++ ){
+			oNavlist[i].index = i;
+			oNavlist[i].onclick = function(){
+				index = this.index+1;
+				navmove();
+				animate(slider,{left:-800*index});
+			}
+		}
+		function next(){
+			if(isMoving){
+				return;
+			}
+			isMoving = true;
+			index++;
+			navmove();
+			animate(slider,{left:-800*index},function(){
+				if(index==7){
+					slider.style.left = '-800px';
+					index = 1;
+				}
+				isMoving = false;
+			});
+		}
+		function prev(){
+			if(isMoving){
+				return;
+			}
+			isMoving = true;
+			index--;
+			navmove();
+			animate(slider,{left:-800*index},function(){
+				if(index==0){
+					slider.style.left = '-4800px';
+					index = 6;
+				}
+				isMoving = false;
+			});
+		}
+		function navmove(){
+			for( var i=0; i<oNavlist.length; i++ ){
+				oNavlist[i].className = "";
+			}
+			if(index >6 ){
+				oNavlist[0].className = "active";
+			}else if(index<=0){
+				oNavlist[5].className = "active";
+			}else {
+				oNavlist[index-1].className = "active";
+			}
+		}
+		timer = setInterval(next, 2000);
+	</script>
+	<script>
+
+		function getStyle(obj, attr){
+			if(obj.currentStyle){
+				return obj.currentStyle[attr];
+			} else {
+				return getComputedStyle(obj, null)[attr];
+			}
+		}
+		function animate(obj,json,callback){
+			clearInterval(obj.timer);
+			obj.timer = setInterval(function(){
+				var isStop = true;
+				for(var attr in json){
+					var now = 0;
+					if(attr == 'opacity'){
+						now = parseInt(getStyle(obj,attr)*100);
+					}else{
+						now = parseInt(getStyle(obj,attr));
+					}
+					var speed = (json[attr] - now) / 8;
+					speed = speed>0?Math.ceil(speed):Math.floor(speed);
+					var cur = now + speed;
+					if(attr == 'opacity'){
+						obj.style[attr] = cur / 100;
+					}else{
+						obj.style[attr] = cur + 'px';
+					}
+					if(json[attr] !== cur){
+						isStop = false;
+					}
+				}
+				if(isStop){
+					clearInterval(obj.timer);
+					callback&&callback();
+				}
+			}, 30)
+		}
+	</script>
+	<script type="text/javascript">
+
+        var PartArea = document.getElementById('part2');
+        var Scroll1 = document.getElementById('scroll1');
+        var Scroll2 = document.getElementById('scroll2');
+
+        Scroll2.innerHTML = Scroll1.innerHTML;
+
+        function roll() {
+        	console.log("a");
+            if(Scroll2.offsetHeight - PartArea.scrollTop <= 0) {
+                PartArea.scrollTop -= Scroll1.offsetHeight;
+            } else {
+                PartArea.scrollTop++;
+            }
+        }
+
+        var StopRoll = setInterval(roll, 60);
+
+        PartArea.onmouseover = function () {
+            clearInterval(StopRoll);
+        }
+        PartArea.onmouseout = function () {
+            StopRoll = setInterval(roll, 60);
+        }
+
+    </script>
+	
+	
+		
+	
+</body>
+</html>
